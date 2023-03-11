@@ -47,7 +47,6 @@ public class MyArrayList<T> implements List<T> {
 		// TODO: FILL THIS IN!
 		if (size >= array.length) {
 			// 배열에 여분의 공간이 없으면 더 큰 배열을 만들어 요소 위에 복사해야 합니다.
-			@SuppressWarnings("unchecked")
 			T[] bigger = (T[]) new Object[array.length * 2];
 			System.arraycopy(array, 0, bigger, 0, array.length);
 			array = bigger;

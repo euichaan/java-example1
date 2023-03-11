@@ -29,4 +29,17 @@ class MyArrayListTest {
 		assertThat(mylist.size()).isEqualTo(3);
 	}
 
+	@Test
+	void testAddIntT() {
+		try {
+			mylist.set(-1, 0);
+			fail("fail");
+		} catch (IndexOutOfBoundsException e) {}
+	}
+
+	@Test
+	void testClear() {
+		mylist.clear();
+		assertThat(mylist.size()).isEqualTo(0);
+	}
 }
