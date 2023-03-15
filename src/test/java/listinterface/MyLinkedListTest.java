@@ -1,0 +1,5 @@
+package listinterface;
+
+class MyLinkedListTest {
+
+}
